@@ -24,7 +24,7 @@ void wave(int arr[],int n){
         cout<<arr[i]<<" ";
     }
 }
-
+x
 int main(){
     int n;
     cin>>n;

@@ -1,9 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int missing(int arr[],int n){
+void sort(int arr[],int n){
+    int l=0,h=1;
+    for(int i=0;i<n;i++){
+        if()
+    }
+}
+
+int missing(int arr[],int &n){
     int sum1=0,fsum=0;
-    sort(arr);
+    sort(arr,n);
     int l=arr[0],h=arr[n-1];
     for(int i=0;i<n;i++){
         sum1+=arr[i];
@@ -15,6 +22,12 @@ int missing(int arr[],int n){
     return ans;
 }
 int main(){
-    
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    cout<<missing(arr,n);
     return 0;
 }
